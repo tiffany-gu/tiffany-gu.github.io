@@ -5,12 +5,24 @@ An art-directed, gallery-style portfolio inspired by the editorial language of
 accents, massive Bodoni display type, and a scroll-scrubbed laptop film as the
 central sculpture.
 
+**Live at [tiffany-gu.github.io](https://tiffany-gu.github.io/)** — deployed
+automatically by GitHub Actions on every push to `main`
+(`.github/workflows/deploy.yml` builds with Vite and publishes to GitHub Pages).
+
 ## Run it
 
 ```bash
 npm install
 npm run dev      # http://localhost:5173
 npm run build    # production build to dist/
+```
+
+## Publish changes
+
+```bash
+git add -A
+git commit -m "describe the change"
+git push         # Actions builds and deploys to tiffany-gu.github.io
 ```
 
 ## How it works
